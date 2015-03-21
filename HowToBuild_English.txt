@@ -1,0 +1,39 @@
+-Required tools to build:
+Visual Studio Community 2013
+
+Boost
+http://www.boost.org/
+
+glew4kb
+https://github.com/demotomohiro/glew4kb
+
+The OpenGL Extension Wrangler Library (GLEW)
+http://glew.sourceforge.net/
+
+CRINKLER
+http://www.crinkler.net/
+
+Shader Minifier
+http://www.ctrl-alt-test.fr/?page_id=7
+https://github.com/laurentlb/Shader_Minifier
+
+
+-How to build:
+Download lib4kb and glew4kb using following code:
+git clone https://github.com/demotomohiro/lib4kb.git
+cd lib4kb/tofu/opengl/
+git clone https://github.com/demotomohiro/glew4kb.git
+cd ../../../
+Download source code of the job changing knight Ganglion.
+git clone https://github.com/demotomohiro/The-Job-changing-knight-Ganglion.git
+cd The-Job-changing-knight-Ganglion/
+Open project/godpaper.sln with Visual Studio.
+Right click godpaper in Solution Explorer, and click Properties.
+In Configuration:Debug,
+set "Configuration Properties->Debugging->Working Directory" to "$(ProjectDir)..\".
+Press F5 to start debugging.
+(You can't build 4k intro without executing debug build.)
+If you want to compress executable file, change file name of the CRINCKLER to
+link.exe and put it in project directory.
+Then, build Demo* configuration to build 4k intro.
+
